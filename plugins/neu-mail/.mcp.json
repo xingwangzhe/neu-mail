@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "neu-mail": {
+      "cwd": ".",
+      "command": "python3",
+      "args": [
+        "./scripts/server.py"
+      ]
+    }
+  }
+}

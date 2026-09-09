@@ -1,0 +1,33 @@
+{
+  "name": "neu-mail",
+  "version": "0.1.0",
+  "description": "Read Northeast University inbox and sent mail using local, read-only IMAP tools.",
+  "author": {
+    "name": "xingwangzhe"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "NEU Mail",
+    "shortDescription": "东北大学邮箱：只读查看收件箱和已发送邮件",
+    "longDescription": "本地 IMAP MCP 插件，支持文件夹发现、分页邮件列表、正文读取和连接诊断。客户端密码独立保存在本机。",
+    "developerName": "xingwangzhe",
+    "category": "Productivity",
+    "capabilities": [],
+    "defaultPrompt": [
+      "检查我的东北大学邮箱连接",
+      "查看最近的收件箱邮件",
+      "查找已发送邮件"
+    ]
+  },
+  "mcpServers": "./.mcp.json",
+  "license": "MIT",
+  "repository": "https://github.com/xingwangzhe/neu-mail",
+  "homepage": "https://github.com/xingwangzhe/neu-mail",
+  "keywords": [
+    "neu",
+    "email",
+    "imap",
+    "mcp",
+    "codex"
+  ]
+}
