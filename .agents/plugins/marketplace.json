@@ -1,0 +1,20 @@
+{
+  "name": "neu-mail",
+  "interface": {
+    "displayName": "Neu Mail"
+  },
+  "plugins": [
+    {
+      "name": "neu-mail",
+      "source": {
+        "source": "local",
+        "path": "./plugins/neu-mail"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

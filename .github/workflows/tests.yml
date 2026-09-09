@@ -1,0 +1,12 @@
+name: Tests
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  unittest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+      - name: Run offline unit tests
+        run: uv run --no-project --python '>=3.10' python -m unittest discover -s plugins/neu-mail/tests -v

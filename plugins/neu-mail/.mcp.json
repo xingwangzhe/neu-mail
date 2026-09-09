@@ -1,0 +1,17 @@
+{
+  "mcpServers": {
+    "neu-mail": {
+      "cwd": ".",
+      "command": "uv",
+      "args": [
+        "run",
+        "--no-project",
+        "--script",
+        "./scripts/server.py"
+      ],
+      "env": {
+        "UV_DEFAULT_INDEX": "https://mirrors.aliyun.com/pypi/simple/"
+      }
+    }
+  }
+}
