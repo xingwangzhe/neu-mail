@@ -1,4 +1,8 @@
-#!/usr/bin/env python3
+#!/usr/bin/env -S uv run --script
+# /// script
+# requires-python = ">=3.10"
+# dependencies = []
+# ///
 """Local, read-only IMAP MCP server. No third-party dependencies."""
 import base64, email, email.policy, imaplib, json, os, re, ssl, stat, sys
 from pathlib import Path

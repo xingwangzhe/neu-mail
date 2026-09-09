@@ -1,4 +1,8 @@
-#!/usr/bin/env python3
+#!/usr/bin/env -S uv run --script
+# /// script
+# requires-python = ">=3.10"
+# dependencies = []
+# ///
 """Interactively configure an account without exposing credentials in argv."""
 import argparse
 import getpass
@@ -49,7 +53,7 @@ def main():
     save_account(path, {'host':args.host, 'port':args.port, 'username':username, 'password':password,
                         'allow_hostname_mismatch':args.allow_hostname_mismatch})
     print('配置已保存，文件权限 0600。密码是本机明文存储，不会写入插件目录。')
-    print('下一步：python3 scripts/check.py --sample')
+    print('下一步：uv run --no-project scripts/check.py --sample')
 
 
 if __name__ == '__main__':

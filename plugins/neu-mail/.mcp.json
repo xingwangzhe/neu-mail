@@ -2,8 +2,11 @@
   "mcpServers": {
     "neu-mail": {
       "cwd": ".",
-      "command": "python3",
+      "command": "uv",
       "args": [
+        "run",
+        "--no-project",
+        "--script",
         "./scripts/server.py"
       ]
     }
